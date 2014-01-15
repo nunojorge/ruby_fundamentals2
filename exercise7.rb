@@ -18,3 +18,8 @@ students[:cohort4] = 43
 #Step 3 - output all the cohort names with the keys method
 puts students.keys
 
+#Step 4 - increase every cohort number by 5% and display the new results
+students.each do |key, value|
+	students[key] = (value*1.05).to_int
+end
+cohort_display(students)
