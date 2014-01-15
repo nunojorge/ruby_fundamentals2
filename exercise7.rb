@@ -11,3 +11,6 @@ def cohort_display(students)
 	end
 end
 cohort_display(students)
+
+#Step 2 - add cohort4: 43 students
+students[:cohort4] = 43
