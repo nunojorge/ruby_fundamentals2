@@ -14,3 +14,7 @@ cohort_display(students)
 
 #Step 2 - add cohort4: 43 students
 students[:cohort4] = 43
+
+#Step 3 - output all the cohort names with the keys method
+puts students.keys
+
