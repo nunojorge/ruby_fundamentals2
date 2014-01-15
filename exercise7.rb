@@ -23,3 +23,7 @@ students.each do |key, value|
 	students[key] = (value*1.05).to_int
 end
 cohort_display(students)
+
+#Step 5 - delete the second cohort and redisplay cohorts
+students.delete(:cohort2)
+cohort_display(students)
