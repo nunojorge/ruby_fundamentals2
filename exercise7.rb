@@ -27,3 +27,11 @@ cohort_display(students)
 #Step 5 - delete the second cohort and redisplay cohorts
 students.delete(:cohort2)
 cohort_display(students)
+
+#Step 6 - calculate the total amount of students in all cohorts by using each and
+#incrementing a variable; then, output the result
+total_number_of_students = 0
+students.each do |key, value|
+	total_number_of_students = total_number_of_students + value
+end
+puts "The total number of students is #{total_number_of_students}"
